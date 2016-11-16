@@ -1,8 +1,8 @@
-package serialize;
+package reflection;
 
 import java.io.Serializable;
 
-public class Employee implements Serializable {
+public class Employee extends Person implements Serializable{
 
 	/**
 	 * 
@@ -12,6 +12,13 @@ public class Employee implements Serializable {
 	private Integer age;
 	private Integer grade;
 	
+	public Employee() {
+		// TODO Auto-generated constructor stub
+		super();
+		this.name="Jim";
+		this.age=13;
+		this.grade=2;
+	}
 	
 	public Employee(String name, Integer age, Integer grade) {
 		super();
@@ -86,6 +93,10 @@ public class Employee implements Serializable {
 		return true;
 	}
 
-
+	@Override
+	public void getInfo() {
+		// TODO Auto-generated method stub
+		System.out.println("I'm an employee");
+	}
 
 }

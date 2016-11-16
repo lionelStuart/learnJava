@@ -14,7 +14,7 @@ import java.util.HashSet;
 /** 
 * @ClassName: LocalStorage 
 * @Description: 
-* @author A18ccms a18ccms_gmail_com 
+* @author lisi 
 * @date 2016年11月15日 下午12:06:12 
 *  
 */
